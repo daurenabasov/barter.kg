@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel__nav {
+  display: flex;
+  gap: 150px;
+
+  font-family: "Gemunu Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.header__logo {
+  font-family: "Genos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 120px;
+
+  color: #000000;
+}
+
+.panel__telephone {
+  font-family: "Gemunu Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  /* identical to box height */
+
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn__login {
+  background-color: #fce043;
+  background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  border: none;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btn__login:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
+  background-color: #bbf0f3;
+  background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, 0.35);
+}
+.login__text {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+  .panel__nav {
+    display: none;
+  }
+  .panel__telephone {
+    display: none;
+  }
+
+  .btn__login {
+    display: none;
+  }
+}
